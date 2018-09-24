@@ -1,0 +1,51 @@
+{
+    "name": "Campaign",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "content",
+            "otherEntityName": "content",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "campaign"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "personalisation",
+            "otherEntityName": "personalisation",
+            "otherEntityRelationshipName": "campaign"
+        }
+    ],
+    "changelogDate": "20180924112720",
+    "javadoc": "Campaign entity.\n@author Rodrigo Martinez.",
+    "entityTableName": "campaign",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

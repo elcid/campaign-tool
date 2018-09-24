@@ -1,0 +1,27 @@
+
+{
+    "campaignToolApp": {
+        "campaign" : {
+            "home": {
+                "title": "Campaigns",
+                "createLabel": "Campaign erstellen",
+                "createOrEditLabel": "Campaign erstellen oder bearbeiten"
+            },
+            "created": "Campaign erstellt mit ID {{ param }}",
+            "updated": "Campaign aktualisiert mit ID {{ param }}",
+            "deleted": "Campaign gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Campaign {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Campaign"
+            },
+            "title": "Title",
+            "description": "Description",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "content": "Content",
+            "personalisation": "Personalisation"
+        }
+    }
+}

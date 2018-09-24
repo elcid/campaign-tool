@@ -40,6 +40,11 @@ public class CacheConfiguration {
             cm.createCache(de.mobile.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(de.mobile.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(de.mobile.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            cm.createCache(de.mobile.domain.Campaign.class.getName(), jcacheConfiguration);
+            cm.createCache(de.mobile.domain.Campaign.class.getName() + ".personalisations", jcacheConfiguration);
+            cm.createCache(de.mobile.domain.Personalisation.class.getName(), jcacheConfiguration);
+            cm.createCache(de.mobile.domain.Content.class.getName(), jcacheConfiguration);
+            cm.createCache(de.mobile.domain.CampaignHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

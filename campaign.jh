@@ -1,0 +1,64 @@
+/**
+ * Campaign entity.
+ * @author Rodrigo Martinez.
+ */
+entity Campaign {
+	title String required,
+	description String,
+    startDate LocalDate,
+    endDate LocalDate
+}
+
+/**
+ * The Personalisation entity.
+ */
+entity Personalisation {
+	customerNumber Long,
+	userId Long,
+    accountType AccountType
+}
+
+/**
+ * The Content entity.
+ */
+entity Content {
+	buttonText String,
+	html String,
+	link String,
+    images String
+}
+
+entity CampaignHistory {
+	startDate Instant,
+	endDate Instant
+}
+
+enum AccountType {
+    COMPACT, COMFORT, PREMIUM
+}
+
+// different personalisations
+relationship OneToMany {
+    Campaign{personalisation} to Personalisation
+}
+
+relationship ManyToOne {
+	Personalisation{manager} to Campaign
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+    CampaignHistory{campaign} to Campaign,
+    Campaign{content} to Content
+}
+
+// Set pagination options
+paginate CampaignHistory with infinite-scroll
+paginate Campaign, Content with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with mySuffix
