@@ -1,0 +1,33 @@
+{
+    "name": "CampaignHistory",
+    "fields": [
+        {
+            "fieldName": "startDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "campaign",
+            "otherEntityName": "campaign",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "campaignHistory"
+        }
+    ],
+    "changelogDate": "20180924112723",
+    "entityTableName": "campaign_history",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

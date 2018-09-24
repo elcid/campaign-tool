@@ -1,0 +1,43 @@
+{
+    "name": "Personalisation",
+    "fields": [
+        {
+            "fieldName": "customerNumber",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "accountType",
+            "fieldType": "AccountType",
+            "fieldValues": "COMPACT,COMFORT,PREMIUM"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "campaign",
+            "otherEntityName": "campaign",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "manager",
+            "otherEntityName": "campaign",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180924112721",
+    "javadoc": "The Personalisation entity.",
+    "entityTableName": "personalisation",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

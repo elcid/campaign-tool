@@ -1,0 +1,24 @@
+
+{
+    "campaignToolApp": {
+        "campaignHistory" : {
+            "home": {
+                "title": "Campaign Histories",
+                "createLabel": "Campaign History erstellen",
+                "createOrEditLabel": "Campaign History erstellen oder bearbeiten"
+            },
+            "created": "Campaign History erstellt mit ID {{ param }}",
+            "updated": "Campaign History aktualisiert mit ID {{ param }}",
+            "deleted": "Campaign History gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Campaign History {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Campaign History"
+            },
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "campaign": "Campaign"
+        }
+    }
+}

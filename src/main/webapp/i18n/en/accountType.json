@@ -1,0 +1,10 @@
+{
+    "campaignToolApp": {
+        "AccountType" : {
+            "null": "",
+            "COMPACT": "COMPACT",
+            "COMFORT": "COMFORT",
+            "PREMIUM": "PREMIUM"
+        }
+    }
+}

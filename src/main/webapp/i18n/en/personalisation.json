@@ -1,0 +1,26 @@
+
+{
+    "campaignToolApp": {
+        "personalisation" : {
+            "home": {
+                "title": "Personalisations",
+                "createLabel": "Create a new Personalisation",
+                "createOrEditLabel": "Create or edit a Personalisation"
+            },
+            "created": "A new Personalisation is created with identifier {{ param }}",
+            "updated": "A Personalisation is updated with identifier {{ param }}",
+            "deleted": "A Personalisation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Personalisation {{ id }}?"
+            },
+            "detail": {
+                "title": "Personalisation"
+            },
+            "customerNumber": "Customer Number",
+            "userId": "User Id",
+            "accountType": "Account Type",
+            "campaign": "Campaign",
+            "manager": "Manager"
+        }
+    }
+}
